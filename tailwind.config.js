@@ -15,7 +15,9 @@ module.exports = {
         'Theme-White': '#FAFAFA',
         'Border':'#C8C8C8;',
         'BG-2':'#191921',
-        'Theme-Blue':'#7e98fd'
+        'Theme-Blue':'#7e98fd',
+        'Orange-2':'#FF602E',
+        'Gray-2':'#3a495d'
 
       },
     },

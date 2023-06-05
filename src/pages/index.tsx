@@ -4,6 +4,8 @@ import HeroSection from '@/components/HeroSection/HeroSection'
 import MainContainer from '@/components/Layout/MainContainer'
 import CustomersSection from '@/components/CustomersSection/CustomersSection'
 import OurApproach from '@/components/OurApproachSection/OurApproach'
+import Stats from '@/components/Stats/Stats'
+import ElevateProject from '@/components/ElevateProject/ElevateProject'
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <div>
         <OurApproach />
       </div>
+      <Stats />
+      <ElevateProject />
     </div>
   )
 }

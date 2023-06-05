@@ -16,8 +16,17 @@ body {
   font-family: var(--raleway-font);
 }
 
-.bg-landingPage{
-  background: url('../assets/LandingPageBg.svg');
+.bg-landingPage {
+  background: url("../assets/LandingPageBg.svg");
   background-repeat: no-repeat;
-  
+}
+
+.bg-ElevatePage {
+  background: url("../assets/ElevateBg.svg");
+  background-repeat: no-repeat;
+}
+
+.linearGradient-ElevatePage {
+  background: linear-gradient(180deg, #272740 0%, rgba(39, 39, 64, 0.4) 100%);
+  border-radius: 17.4343px;
 }
