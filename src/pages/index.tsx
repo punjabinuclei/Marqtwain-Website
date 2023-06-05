@@ -6,6 +6,7 @@ import CustomersSection from '@/components/CustomersSection/CustomersSection'
 import OurApproach from '@/components/OurApproachSection/OurApproach'
 import Stats from '@/components/Stats/Stats'
 import ElevateProject from '@/components/ElevateProject/ElevateProject'
+import FeaturedProjects from '@/components/FeaturedProjects/FeaturedProjects'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       </div>
       <Stats />
       <ElevateProject />
+      <FeaturedProjects />
     </div>
   )
 }
