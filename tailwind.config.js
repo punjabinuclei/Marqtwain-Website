@@ -13,11 +13,13 @@ module.exports = {
         'Gray': ' #4B5780',
         'BG': '#212129',
         'Theme-White': '#FAFAFA',
-        'Border':'#C8C8C8;',
-        'BG-2':'#191921',
-        'Theme-Blue':'#7e98fd',
-        'Orange-2':'#FF602E',
-        'Gray-2':'#3a495d'
+        'Border': '#C8C8C8;',
+        'BG-2': '#191921',
+        'Theme-Blue': '#7e98fd',
+        'Orange-2': '#FF602E',
+        'Gray-2': '#3a495d',
+        'Theme-Blue-2': '#4F4FC8',
+        'Theme-Blue-3':'#0F2133'
 
       },
     },

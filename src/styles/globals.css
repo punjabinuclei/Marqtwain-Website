@@ -30,3 +30,15 @@ body {
   background: linear-gradient(180deg, #272740 0%, rgba(39, 39, 64, 0.4) 100%);
   border-radius: 17.4343px;
 }
+
+.testimonials {
+  background: linear-gradient(
+    180deg,
+    #484863 0%,
+    rgba(65, 65, 88, 0.864844) 41.46%,
+    rgba(33, 33, 41, 0.25) 100%
+  );
+  backdrop-filter: blur(32.5px);
+  border-radius: 24px;
+}
+
