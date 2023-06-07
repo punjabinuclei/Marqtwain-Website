@@ -9,7 +9,7 @@ const Testimonials = () => {
                 <div>
                     <h1 className='text-white font-semibold text-5xl text-center mt-24'>Our customers can’t imagine<br /> life without Marq Twinn</h1>
 
-                    <div className='flex justify-center  '>
+                    {/* <div className='flex justify-center  '>
                         <div className='flex w-9/12 py-12 px-12 testimonials '>
                             <div className='px-4'>
                                 <Image src={Mohit} alt='Mohit' />
@@ -24,7 +24,7 @@ const Testimonials = () => {
                             </div>
                         </div>
 
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
