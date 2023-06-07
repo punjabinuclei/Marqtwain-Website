@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import ourApproach from '../../assets/ourApproach.svg'
+import ourApproach from '../../assets/OurApproach.svg'
 import CodeAgain from '../../assets/CodeAgain.svg'
 
 const OurApproach = () => {
