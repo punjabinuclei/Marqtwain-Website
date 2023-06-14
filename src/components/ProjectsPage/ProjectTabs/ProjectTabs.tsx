@@ -5,6 +5,14 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 
+
+
+
+
+import WebDesigns from './components/WebDesigns';
+import AppDesigns from './components/AppDesigns';
+
+
 const ProjectTabs = () => {
     const [value, setValue] = React.useState('1');
 
@@ -24,18 +32,18 @@ const ProjectTabs = () => {
                             style: { backgroundColor: '#677FCF' },
                         }}
                     >
-                        <Tab
+                        {/* <Tab
                             label="Logo Designs"
                             className="font-light text-[#ffffff4d] text-opacity-30 text-2xl hover:text-white hover-underline-animation transition-delay-300"
                             sx={{
                                 '&.Mui-selected': {
                                     color: '#FFFFFF',
                                 },
-                                
+
                             }}
                             value="1"
-                        />
-                        <Tab
+                        /> */}
+                        {/* <Tab
                             label="Pitch Decks"
                             className="font-light text-[#ffffff4d] text-opacity-30 text-2xl hover:text-white hover-underline-animation transition-delay-300"
                             sx={{
@@ -44,7 +52,7 @@ const ProjectTabs = () => {
                                 },
                             }}
                             value="2"
-                        />
+                        /> */}
                         <Tab
                             label="Web Designs"
                             className="font-light text-[#ffffff4d] text-opacity-30 text-2xl hover:text-white hover-underline-animation transition-delay-300"
@@ -66,7 +74,7 @@ const ProjectTabs = () => {
                             value="4"
                         />
                         <Tab
-                            label="Brand Identity"
+                            label="Motion UI"
                             className="font-light text-[#ffffff4d] text-opacity-30 text-2xl hover:text-white hover-underline-animation transition-delay-300"
                             sx={{
                                 '&.Mui-selected': {
@@ -79,8 +87,8 @@ const ProjectTabs = () => {
                 </Box>
                 <TabPanel value="1">Item One</TabPanel>
                 <TabPanel value="2">Item Two</TabPanel>
-                <TabPanel value="3">Item Three</TabPanel>
-                <TabPanel value="4">Item Thrwee</TabPanel>
+                <TabPanel value="3"><WebDesigns /></TabPanel>
+                <TabPanel value="4"><AppDesigns /></TabPanel>
                 <TabPanel value="5">Item Three</TabPanel>
             </TabContext>
         </div>
