@@ -5,16 +5,11 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 
-
-
-
-
 import WebDesigns from './components/WebDesigns';
 import AppDesigns from './components/AppDesigns';
 
-
 const ProjectTabs = () => {
-    const [value, setValue] = React.useState('0');
+    const [value, setValue] = React.useState('3'); // Set '3' for the "Web Designs" tab
 
     const handleChange = (event: React.SyntheticEvent, newValue: string) => {
         setValue(newValue);
@@ -32,27 +27,6 @@ const ProjectTabs = () => {
                             style: { backgroundColor: '#677FCF' },
                         }}
                     >
-                        {/* <Tab
-                            label="Logo Designs"
-                            className="font-light text-[#ffffff4d] text-opacity-30 text-2xl hover:text-white hover-underline-animation transition-delay-300"
-                            sx={{
-                                '&.Mui-selected': {
-                                    color: '#FFFFFF',
-                                },
-
-                            }}
-                            value="1"
-                        /> */}
-                        {/* <Tab
-                            label="Pitch Decks"
-                            className="font-light text-[#ffffff4d] text-opacity-30 text-2xl hover:text-white hover-underline-animation transition-delay-300"
-                            sx={{
-                                '&.Mui-selected': {
-                                    color: '#FFFFFF',
-                                },
-                            }}
-                            value="2"
-                        /> */}
                         <Tab
                             label="Web Designs"
                             className="font-light text-[#ffffff4d] text-opacity-30 text-2xl hover:text-white hover-underline-animation transition-delay-300"
@@ -87,8 +61,12 @@ const ProjectTabs = () => {
                 </Box>
                 <TabPanel value="1">Item One</TabPanel>
                 <TabPanel value="2">Item Two</TabPanel>
-                <TabPanel value="3"><WebDesigns /></TabPanel>
-                <TabPanel value="4"><AppDesigns /></TabPanel>
+                <TabPanel value="3">
+                    <WebDesigns />
+                </TabPanel>
+                <TabPanel value="4">
+                    <AppDesigns />
+                </TabPanel>
                 <TabPanel value="5">Item Three</TabPanel>
             </TabContext>
         </div>
