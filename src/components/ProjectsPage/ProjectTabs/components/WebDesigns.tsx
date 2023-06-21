@@ -7,6 +7,8 @@ import Project4 from '../../../../assets/Projects/WebDesigns/Project4.svg'
 import Project5 from '../../../../assets/Projects/WebDesigns/Project5.svg'
 import Project6 from '../../../../assets/Projects/WebDesigns/Project6.svg'
 
+import ProjectContainer from './ProjectContainer'
+
 
 
 
@@ -16,27 +18,28 @@ const WebDesigns = () => {
 
 
         <div className='flex justify-center' >
-            <div className='container grid grid-cols-2 gap-6 px-[180px] py-[80px]'>
+            <div className='container grid grid-cols-2 gap-10 px-[160px] py-[80px]'>
 
-                <div>
+
+
+                <ProjectContainer heading='VIBZ' description='Modern Lifestyle Blogs'>
                     <Image src={Project1} alt='project1' />
-                </div>
-                <div>
+                </ProjectContainer>
+                <ProjectContainer heading='Mulya' description='Abating International Transactional Fees '>
                     <Image src={Project2} alt='project1' />
-                </div>
-                <div>
+                </ProjectContainer>
+                <ProjectContainer heading='Transai.' description='Revolutionizing Trade Finance '>
                     <Image src={Project3} alt='project1' />
-                </div>
-                <div>
+                </ProjectContainer>
+                <ProjectContainer heading='Coupl.' description='Saving & Investing for Couples'>
                     <Image src={Project4} alt='project1' />
-                </div>
-                <div>
+                </ProjectContainer >
+                <ProjectContainer heading='Stratzy' description='Invest Like The Ultra Rich Do!'>
                     <Image src={Project5} alt='project1' />
-                </div>
-                <div>
+                </ProjectContainer>
+                <ProjectContainer heading='muse.' description='Musing sounds to enhance listening'>
                     <Image src={Project6} alt='project1' />
-                </div>
-
+                </ProjectContainer>
 
 
             </div>

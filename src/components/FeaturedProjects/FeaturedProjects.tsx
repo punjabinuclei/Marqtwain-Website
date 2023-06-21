@@ -5,6 +5,8 @@ import DictionaryImg from '../../assets/Projects/Dictionary.svg'
 import NFTImg from '../../assets/Projects/NFT.svg'
 import WatchImg from '../../assets/Projects/Watch.svg'
 
+import FeaturedProjectContainer from './components/FeaturedProjectsContainer'
+
 
 const FeaturedProjects = () => {
     return (
@@ -18,30 +20,29 @@ const FeaturedProjects = () => {
                         <h1>Projects</h1>
                     </div>
                 </div>
-                <div className='container grid grid-cols-2 gap-10 '>
+                <div className=' grid grid-cols-2 gap-10 '>
                     <div className="relative group">
-                        <Image src={NFTImg} alt="Img" />
-
-                        <div className="absolute inset-0  bg-black bg-opacity-70  font-bold opacity-0 group-hover:opacity-100 transition-opacity hover:rounded-xl">
-                            <div className='absolute bottom-20 left-10'>
-                                Lolo Rosso
-                            </div>
-                            <div className='absolute bottom-14 left-10'>
-                                Watch Connoissuer E-Commerce Store
-                            </div>
-                        </div>
+                        <FeaturedProjectContainer heading='ArtMint' description='Your Gateway to future Digital Art'>
+                            <Image src={NFTImg} alt="Img" />
+                        </FeaturedProjectContainer >
                     </div>
 
 
                     <div className='relative bottom-[179px]'>
-                        <Image src={DictionaryImg} alt='Img' />
+                        <FeaturedProjectContainer heading='Lexiverse' description='Interactive Dictionary App'>
+                            <Image src={DictionaryImg} alt="Img" />
+                        </FeaturedProjectContainer >
                     </div>
 
                     <div>
-                        <Image src={WatchImg} alt='Img' />
+                        <FeaturedProjectContainer heading='Lolo Rosso' description='Watch Connoissuer E-Commerce Store'>
+                            <Image src={WatchImg} alt="Img" />
+                        </FeaturedProjectContainer >
                     </div>
                     <div className='relative bottom-[179px]'>
-                        <Image src={DatingImg} alt='Img' />
+                        <FeaturedProjectContainer heading='Coupl.' description='Saving and Investing for Couples'>
+                            <Image src={DatingImg} alt="Img" />
+                        </FeaturedProjectContainer >
                     </div>
 
                     <div>
