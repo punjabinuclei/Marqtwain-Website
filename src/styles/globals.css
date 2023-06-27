@@ -149,4 +149,13 @@ body {
 
 
 
+.testimonial-illustration{
+  background: url("../assets/Testimonials2.svg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: 50% 50%;
+}
 
+.testimonialsCardBg{
+background: url('../assets/TestimonialBackground.png');
+}
