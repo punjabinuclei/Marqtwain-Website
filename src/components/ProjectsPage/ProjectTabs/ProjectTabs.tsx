@@ -7,6 +7,7 @@ import TabPanel from '@mui/lab/TabPanel';
 
 import WebDesigns from './components/WebDesigns';
 import AppDesigns from './components/AppDesigns';
+import MotionUi from './components/MotionUi';
 
 const ProjectTabs = () => {
     const [value, setValue] = React.useState('3'); // Set '3' for the "Web Designs" tab
@@ -59,15 +60,15 @@ const ProjectTabs = () => {
                         />
                     </TabList>
                 </Box>
-                <TabPanel value="1">Item One</TabPanel>
-                <TabPanel value="2">Item Two</TabPanel>
                 <TabPanel value="3">
                     <WebDesigns />
                 </TabPanel>
                 <TabPanel value="4">
                     <AppDesigns />
                 </TabPanel>
-                <TabPanel value="5">Item Three</TabPanel>
+                <TabPanel value="5">
+                    {/* <MotionUi /> */}
+                </TabPanel>
             </TabContext>
         </div>
     );
