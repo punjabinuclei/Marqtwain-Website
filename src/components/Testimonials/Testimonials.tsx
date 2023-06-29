@@ -20,12 +20,12 @@ const Testimonials = () => {
             <div className='h-full'>
                 <div className=''>
                     <div>
-                        <h1 className='text-white font-semibold text-5xl text-center pt-[106px]'>
+                        <h1 className='text-white font-semibold text-[1.3rem] lg:text-5xl text-center pt-[106px]'>
                             Our customers can’t imagine<br /> life without Marq Twinn</h1>
                     </div>
-                    <div>
+                    <div className=''>
                         <OwlCarousel
-                            className="pt-16"
+                            className="relative bottom-2 lg:bottom-0 lg:pt-16"
                             loop={true}
                             items={3}
                             responsiveRefreshRate={5}
@@ -62,7 +62,7 @@ const Testimonials = () => {
                             }}
                             marginHeight={50}>
 
-                            <div className='py-[56px] item'>
+                            <div className='py-[56px] item flex justify-center'>
                                 <TestimonialsContainer testimonial='“Marqtwinn makes it easy for Strazy’s Growth team 
                                 to get design done well and fast. Their work is intuitive and enables speed, 
                                 and the dedicated team model ensures everyone understands our brand and day-to-day

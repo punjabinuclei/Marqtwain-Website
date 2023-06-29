@@ -159,3 +159,20 @@ body {
 .testimonialsCardBg{
 background: url('../assets/TestimonialBackground.png');
 }
+
+
+
+
+
+/* Mobile Version */
+
+.LandingPageBgMobile{
+  background: url("../assets/HomePageBgMobile.svg");
+  background-repeat: no-repeat;
+
+  background-position: 100% 12%;
+}
+
+.testimonialsCardBgMobile{
+  background: url('../assets/testimonialsCardBgMobile.svg');
+}

@@ -7,7 +7,7 @@ import Img4 from '../../assets/Img4.svg'
 
 const ExpertUiDesigns = () => {
     return (
-        <div className='bg-white   h-fit py-28'>
+        <div className='hidden lg:block bg-white   h-fit py-28'>
             <div className=' flex justify-evenly pl-[70px]'>
                 <div className='self-center '>
                     <p className='text-sm tracking-widest font-semibold '>DRIVING GREAT OUTCOMES</p>

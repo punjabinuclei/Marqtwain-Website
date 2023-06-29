@@ -7,14 +7,20 @@ import OurApproach from '@/components/OurApproachSection/OurApproach'
 import Stats from '@/components/Stats/Stats'
 import ElevateProject from '@/components/ElevateProject/ElevateProject'
 import FeaturedProjects from '@/components/FeaturedProjects/FeaturedProjects'
+import FeaturedProjectsMobile from '@/components/FeaturedProjects/FeaturedProjectsMobile'
 import ExpertUiDesigns from '@/components/ExpertUiDesigns/ExpertUiDesigns'
 import Testimonials from '@/components/Testimonials/Testimonials'
 import Footer from '@/components/Footer/Footer'
+import FooterMobile from '@/components/Footer/FooterMobile'
 
 export default function Home() {
   return (
     <div>
-      <div className='bg-landingPage'>
+      <div className='LandingPageBgMobile lg:hidden'>
+        <Navbar />
+        <HeroSection />
+      </div>
+      <div className='hidden lg:block bg-landingPage'>
         <Navbar />
         <HeroSection />
       </div>
@@ -24,10 +30,24 @@ export default function Home() {
       </div>
       <Stats />
       <ElevateProject />
-      <FeaturedProjects />
+      <div>
+        <div className='hidden lg:block'>
+          <FeaturedProjects />
+        </div>
+        <div className='lg:hidden'>
+          <FeaturedProjectsMobile />
+        </div>
+      </div>
       <ExpertUiDesigns />
       <Testimonials />
-      <Footer />
+      <div>
+        <div className='hidden lg:block'>
+          <Footer />
+        </div>
+        <div className='lg:hidden'>
+          <FooterMobile />
+        </div>
+      </div>
     </div>
   )
 }

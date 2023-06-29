@@ -6,7 +6,7 @@ interface Props {
 
 const NavbarContainer = ({ children }: Props) => {
     return (
-        <div className=' py-[48px] flex justify-between pl-[170px] pr-[201px]'>
+        <div className=' py-[48px] flex justify-between px-[1.875rem] lg:pl-[170px] lg:pr-[201px]'>
             {children}
         </div>
     )

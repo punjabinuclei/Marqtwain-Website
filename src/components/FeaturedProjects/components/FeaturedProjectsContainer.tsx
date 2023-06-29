@@ -15,9 +15,9 @@ const FeaturedProjectContainer = ({ children, heading, description }: Props) => 
             <div className="content">
                 <div className="content-overlay"></div>
                 {children}
-                <div className="content-details fadeIn-bottom fadeIn-left">
-                    <h3 className='font-semibold text-[25px] leading-16 flex items-center text-center tracking-tighter text-white'>{heading}</h3>
-                    <p className='text-16 leading-16 flex items-center tracking-tighter text-white'>{description}</p>
+                <div className="content-details fadeIn-bottom fadeIn-left ">
+                    <h3 className='font-semibold text-[1.2rem] lg:text-[25px] leading-16 flex items-center text-center tracking-tighter text-white relative bottom-5 lg:bottom-0'>{heading}</h3>
+                    <p className='text-[0.6rem] lg:text-[16px] leading-16 flex items-center tracking-tighter text-white relative bottom-5 lg:bottom-0 '>{description}</p>
                 </div>
             </div>
         </div>
