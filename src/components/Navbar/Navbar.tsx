@@ -10,10 +10,14 @@ const Navbar = () => {
     return (
         <NavbarContainer>
             <div className='hidden lg:block'>
-                <Image src={NavLogo} alt='NavLogo' />
+                <a href="/" onClick={(e) => { e.preventDefault(); router.push('/'); }}>
+                    <Image src={NavLogo} alt='NavLogo' />
+                </a>
             </div>
             <div className='lg:hidden'>
-                <Image src={NavLogo2} alt='NavLogo' />
+                <a href="/" onClick={(e) => { e.preventDefault(); router.push('/'); }}>
+                    <Image src={NavLogo2} alt='NavLogo' />
+                </a>
             </div>
             <div className='flex'>
                 <div onClick={() => router.push('/ourWork')} className='hidden lg:block'>
@@ -22,7 +26,10 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div>
-                    <button className='bg-Orange text-[0.64rem] px-[1rem] py-[0.5rem] relative bottom-2 lg:bottom-0 lg:py-3.5 lg:px-7 lg:text-[0.875rem] leading-4 rounded-xl text-white'>
+                    <button
+                        onClick={() => router.push('/contactUs')}
+                        className='bg-Orange text-[0.64rem] px-[1rem] py-[0.5rem] relative bottom-2 lg:bottom-0 lg:py-3.5 lg:px-7 lg:text-[0.875rem] leading-4 rounded-xl text-white'
+                    >
                         Contact Us
                     </button>
                 </div>

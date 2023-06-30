@@ -38,7 +38,7 @@ const ContactUs = () => {
             </div>
             <div className='lg:hidden'>
                 <div className='mx-[2rem]'>
-                    <div  >
+                    <div>
                         <div >
                             <h1 className='text-[1.9rem] text-[#6D748F] text-center'>Let’s <span className='text-white'>level</span> up your<span className='relative bottom-3' > <br />
                                 brand together,</span>

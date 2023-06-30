@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+
 
 const HeroSection = () => {
+    const router = useRouter();
+
     const [email, setEmail] = useState('');
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -14,13 +18,14 @@ const HeroSection = () => {
     };
 
     return (
+
         <div className="h-screen mt-[1rem] pl-[1.75rem] lg:mt-[6.25rem] lg:pl-[10.625rem] lg:pr-[12.5625rem]">
             <div className="text-white lg:h-full leading-10">
                 <div className="text-[1.9375rem] lg:text-[3.125rem] font-bold">
-                    Crafting<span className='lg:hidden'><br/></span>Products for
+                    Crafting<span className='lg:hidden'><br /></span>Products for
                     <span className="relative top  lg:top-4">
                         <br />
-                        the Next-Gen<span className='lg:hidden'><br/></span> User Experience
+                        the Next-Gen<span className='lg:hidden'><br /></span> User Experience
                     </span>
                 </div>
                 <div className="hidden lg:block text-[1.188rem] leading-7 pt-10">
@@ -43,7 +48,9 @@ const HeroSection = () => {
                             value={email}
                             onChange={handleInputChange}
                         />
-                        <button className="ml-2 px-6 py-3.5 text-sm bg-Orange rounded-xl">
+                        <button
+                            onClick={() => router.push('/contactUs')}
+                            className="ml-2 px-6 py-3.5 text-sm bg-Orange rounded-xl">
                             Get Started
                         </button>
                     </form>
