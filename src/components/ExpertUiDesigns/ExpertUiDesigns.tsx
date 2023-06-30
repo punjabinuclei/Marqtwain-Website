@@ -1,4 +1,5 @@
 import React from 'react'
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Img1 from '../../assets/Img1.svg'
 import Img2 from '../../assets/Img2.svg'
@@ -6,6 +7,7 @@ import Img3 from '../../assets/Img3.svg'
 import Img4 from '../../assets/Img4.svg'
 
 const ExpertUiDesigns = () => {
+    const router = useRouter();
     return (
         <div className='hidden lg:block bg-white   h-fit py-28'>
             <div className=' flex justify-evenly pl-[70px]'>
@@ -13,7 +15,7 @@ const ExpertUiDesigns = () => {
                     <p className='text-sm tracking-widest font-semibold '>DRIVING GREAT OUTCOMES</p>
                     <h1 className='text-5xl font-bold mt-4 tracking-wide'>Expert<span className='text-Theme-Blue-2'> UI/UX </span> <span className='relative top-3'> <br /> Design Solutions</span> <span className='relative top-6'> <br /> for Your Business </span></h1>
                     <input type="text" id="first_name" className="mt-10 bg-gray-50 border font-medium border-gray-300 text-gray-900 text-sm rounded-lg  block p-3.5 w-[397px]  relative top-7" placeholder="Your work email" required />
-                    <button className=' bg-Orange-2 p-4 font-medium text-sm rounded-lg text-white mt-3 relative top-6 w-[397px]'>Get Started</button>
+                    <button onClick={() => router.push('/contactUs')} className=' bg-Orange-2 p-4 font-medium text-sm rounded-lg text-white mt-3 relative top-6 w-[397px]'>Get Started</button>
                 </div>
 
                 <div className='grid grid-cols-2 gap-4 '>

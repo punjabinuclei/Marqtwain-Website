@@ -1,12 +1,14 @@
 import Image from 'next/image'
 import FooterLogoMobile from "../../assets/LogoFooterMobile.svg"
-
+import { useRouter } from 'next/router'
 import Linkedin from '../../assets/Linkedin.svg'
 import Facebook from '../../assets/Facebook.svg'
 import Instagram from '../../assets/Instagram.svg'
 import Twitter from '../../assets/Twitter.svg'
 
 const Footer = () => {
+    const router=useRouter();
+
     return (
         <div className=''>
             <div className='bg-white  pt-[45px] pb-6'>
@@ -76,7 +78,7 @@ const Footer = () => {
                         <h1 className='font-semibold text-[1.3rem] text-center'>Connect with Us!</h1>
                         <p className='text-[0.8rem] font-semibold pt-3 text-Gray-4 text-center'>We're just a message or a call away - get  in touch with us  today!</p>
                         <input style={{ outline: 'none' }} type="text" id="first_name" className="mt-8 bg-gray-50 border font-medium border-gray-400 rounded-md text-black text-xs   block w-full p-3.5  " placeholder="john@gmail.com" required />
-                        <button className='block w-full bg-Theme-Blue-3 p-4 font-medium text-sm rounded-xl text-white mt-4 '>Contact Us</button>
+                        <button  onClick={() => router.push('/contactUs')} className='block w-full bg-Theme-Blue-3 p-4 font-medium text-sm rounded-xl text-white mt-4 '>Contact Us</button>
                     </div>
                 </div>
 
