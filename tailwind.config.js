@@ -22,7 +22,10 @@ module.exports = {
         'Theme-Blue-3':'#0F2133',
         'Gray-3':'rgba(255, 255, 255, 0.60)',
         'Gray-4':'#646464',
-        'Black-2':'#1D1F25'
+        'Black-2':'#1D1F25',
+        'Gray-5':'#72727A',
+        'Gray-6':'#A9AAB0',
+        'Gray-7':'#ABADB5',
 
       },
     },

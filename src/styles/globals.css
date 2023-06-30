@@ -161,7 +161,10 @@ background: url('../assets/TestimonialBackground.png');
 }
 
 
-
+.contactPageBg{
+  background: url('../assets/ContactPageBg.svg');
+  background-position: 50% 50%;
+}
 
 
 /* Mobile Version */
