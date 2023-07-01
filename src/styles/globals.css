@@ -174,7 +174,7 @@ body {
   background: url("../assets/testimonialsCardBgMobile.svg");
 }
 
-.active {
+.activeButton {
   background-color: #4f4fc8;
   border-radius: 0.75rem;
   border: none !important;
