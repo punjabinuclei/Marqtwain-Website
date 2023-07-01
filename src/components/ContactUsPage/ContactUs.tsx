@@ -14,9 +14,6 @@ const ContactUs = () => {
         <div>
 
             <div className='hidden lg:block'>
-                <div>
-                    <Image src={bg} alt='bg' className='absolute top-0 right-0 w-full' />
-                </div>
                 <div className='flex justify-between lg:pl-[170px] lg:pr-[200px] ContactPageBg'>
                     <div  >
                         <div >
@@ -43,10 +40,7 @@ const ContactUs = () => {
                 </div>
             </div>
             <div className='lg:hidden'>
-                <div>
-                    <Image src={bg} alt='bg' className='absolute top-0 right-0 h-full w-full' />
-                </div>
-                <div className='mx-[2rem]'>
+                <div className='mx-[2rem] z-40'>
                     <div>
                         <div >
                             <h1 className='text-[1.9rem] text-[#6D748F] text-center'>Let’s <span className='text-white'>level</span> up your<span className='relative bottom-3' > <br />
