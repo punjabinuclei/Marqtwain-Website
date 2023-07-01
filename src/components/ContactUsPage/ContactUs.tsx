@@ -6,11 +6,17 @@ import Linkedin from '../../assets/Linkedin2.svg'
 import Twitter from '../../assets/Twitter2.png'
 import Instagram from '../../assets/Instagram2.svg'
 import Facebook from '../../assets/Facebook2.svg'
+import bg from '../../assets/EllipseNew.svg'
+import bg2 from '../../assets/EllipseNew2.svg'
 
 const ContactUs = () => {
     return (
         <div>
+
             <div className='hidden lg:block'>
+                <div>
+                    <Image src={bg} alt='bg' className='absolute top-0 right-0 w-full' />
+                </div>
                 <div className='flex justify-between lg:pl-[170px] lg:pr-[200px] ContactPageBg'>
                     <div  >
                         <div >
@@ -37,6 +43,9 @@ const ContactUs = () => {
                 </div>
             </div>
             <div className='lg:hidden'>
+                <div>
+                    <Image src={bg} alt='bg' className='absolute top-0 right-0 h-full w-full' />
+                </div>
                 <div className='mx-[2rem]'>
                     <div>
                         <div >

@@ -179,3 +179,12 @@ background: url('../assets/TestimonialBackground.png');
 .testimonialsCardBgMobile{
   background: url('../assets/testimonialsCardBgMobile.svg');
 }
+
+
+
+
+.active {
+  background-color:   #4F4FC8;
+  border-radius: 0.75rem;
+  border: none !important;
+}

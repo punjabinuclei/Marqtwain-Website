@@ -2,12 +2,29 @@ import React, { useState } from 'react';
 
 const ContactForm = () => {
 
+
+    // Button Active State
+    const [activeButton, setActiveButton] = useState('');
+
+    const handleButtonClick = (buttonId: string) => {
+        setActiveButton(buttonId);
+        setContactData((prevData) => ({
+            ...prevData,
+            button: buttonId,
+        }));
+    };
+
+
+
+
+
     // Form 
     const [contactData, setContactData] = useState({
         name: '',
         email: '',
         message: '',
-        phone: ''
+        phone: '',
+        button: '',
     });
 
 
@@ -25,18 +42,19 @@ const ContactForm = () => {
 
     const handleSubmit = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         event.preventDefault();
-        const [name, email, message, phone] = [contactData.name, contactData.email, contactData.message, contactData.phone];
+        const [name, email, message, phone, button] = [contactData.name, contactData.email, contactData.message, contactData.phone, contactData.button];
         let res = await fetch("https://marqtwinn-website-default-rtdb.firebaseio.com/Contact.json", {
             method: 'POST',
             headers: {
-                'Content-Type': 'website/json',
+                'Content-Type': 'application/json',
 
             },
             body: JSON.stringify({
                 name,
                 email,
                 message,
-                phone
+                phone,
+                button
             })
         })
         if (res)
@@ -68,48 +86,62 @@ const ContactForm = () => {
                     <div className='mb-[0.94rem]'>
                         <h1 className='text-[1rem] text-white'>I’m interested in</h1>
                     </div>
+                    <div id="contact-form-buttons">
+                        <div className='flex'>
+                            <div className={`mr-2 ${activeButton === 'user-research' ? 'active' : ''}`}>
+                                <button
+                                    onClick={() => handleButtonClick('user-research')}
+                                    type="button"
+                                    className={`border ${activeButton === 'user-research' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                    rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                >
+                                    User Research
+                                </button>
+                            </div>
 
-                    <div className='flex'>
-                        <div className='mr-2'>
-                            <button className='border border-Gray-6 px-[1.125rem] py-[0.425rem]
-                        rounded-[0.75rem] text-Gray-7 hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2
-                        hover:text-white'>User Research</button>
+                            <div className={`mr-2 ${activeButton === 'web-design' ? 'active' : ''}`}>
+                                <button
+                                    onClick={() => handleButtonClick('web-design')}
+                                    type='button' className={`border ${activeButton === 'web-design' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                    rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                >Web Design</button>
+                            </div>
+
+                            <div className={` ${activeButton === 'design-consultation' ? 'active' : ''}`}>
+                                <button
+                                    onClick={() => handleButtonClick('design-consultation')}
+                                    type='button' className={`border ${activeButton === 'design-consultation' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                    rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                >Design Consultation</button>
+                            </div>
+
                         </div>
 
-                        <div className='mr-2'>
-                            <button className='border border-Gray-6 px-[1.125rem] py-[0.425rem]
-                        rounded-[0.75rem] text-Gray-7 hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2
-                        hover:text-white'>Web Design</button>
-                        </div>
+                        <div className='mt-[0.69rem] flex'>
+                            <div className={`mr-2  ${activeButton === 'ui/ux-design' ? 'active' : ''}`}>
+                                <button
+                                    onClick={() => handleButtonClick('ui/ux-design')}
+                                    type='button' className={`border ${activeButton === 'ui/ux-design' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                    rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                >UI/UX Design</button>
+                            </div>
 
-                        <div>
-                            <button className='border border-Gray-6 px-[1.125rem] py-[0.425rem]
-                        rounded-[0.75rem] text-Gray-7 hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2
-                        hover:text-white'>Design Consultation</button>
+                            <div className={`mr-2  ${activeButton === 'other' ? 'active' : ''}`}>
+                                <button
+                                    onClick={() => handleButtonClick('other')}
+                                    type='button' className={`border ${activeButton === 'other' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                    rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                >Other</button>
+                            </div>
                         </div>
 
                     </div>
-
-                    <div className='flex mt-[0.69rem]'>
-                        <div className='mr-2'>
-                            <button className='border border-Gray-6 px-[1.125rem] py-[0.425rem]
-                        rounded-[0.75rem] text-Gray-7 hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2
-                        hover:text-white'>UI/UX Design</button>
-                        </div>
-
-                        <div>
-                            <button className='border border-Gray-6 px-[1.125rem] py-[0.425rem]
-                        rounded-[0.75rem] text-Gray-7 hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2
-                        hover:text-white'>Other</button>
-                        </div>
-                    </div>
-
-
 
                     <div className="flex mt-[4.5rem]">
                         <div>
                             <input
                                 name='name'
+                                autoComplete='off'
                                 value={contactData.name}
                                 onChange={handleChange}
                                 style={{ outline: 'none' }}
@@ -186,46 +218,58 @@ const ContactForm = () => {
                             <h1 className='text-[1rem] text-white text-center'>I’m interested in</h1>
                         </div>
 
-                        <div className='flex mb-[0.94rem] justify-center'>
-                            <div className='mr-2'>
-                                <button className='border border-Gray-6 px-[1.125rem] py-[0.425rem]
-                        rounded-[0.75rem] text-Gray-7 hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2
-                        hover:text-white'>User Research</button>
-                            </div>
+                        <div id='contact-form-buttons'>
+                            <div className='flex mb-[0.94rem] justify-center'>
+                                <div className={`mr-2 ${activeButton === 'user-research' ? 'active' : ''}`}>
+                                    <button
+                                        onClick={() => handleButtonClick('user-research')}
+                                        id='user-research' type='button' className={`border ${activeButton === 'user-research' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                        rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                    >User Research</button>
+                                </div>
 
-                            <div className='mr-2'>
-                                <button className='border border-Gray-6 px-[1.125rem] py-[0.425rem]
-                        rounded-[0.75rem] text-Gray-7 hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2
-                        hover:text-white'>Web Design</button>
+                                <div className={`mr-2 ${activeButton === 'web-design' ? 'active' : ''}`}>
+                                    <button
+                                        onClick={() => handleButtonClick('web-design')}
+                                        id='web-design' type='button' className={`border ${activeButton === 'web-design' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                        rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                    >Web Design</button>
+                                </div>
+                            </div>
+                            <div className='flex justify-center'>
+                                <div className={` ${activeButton === 'design-consultation' ? 'active' : ''}`}>
+                                    <button
+                                        onClick={() => handleButtonClick('design-consultation')}
+                                        id='design-consultation' type='button' className={`border ${activeButton === 'design-consultation' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                        rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                    >Design Consultation</button>
+                                </div>
+                            </div>
+                            <div className='flex mt-[0.69rem] justify-center'>
+                                <div className={`mr-2 ${activeButton === 'ui/ux-design' ? 'active' : ''}`}>
+                                    <button
+                                        onClick={() => handleButtonClick('ui/ux-design')}
+                                        id='ui/ux-design' type='button' className={`border ${activeButton === 'ui/ux-design' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                        rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                    >UI/UX Design</button>
+                                </div>
+
+                                <div className={`mr-2 ${activeButton === 'other' ? 'active' : ''}`}>
+                                    <button
+                                        onClick={() => handleButtonClick('other')}
+                                        type='button' className={`border ${activeButton === 'other' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                        rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                    >Other</button>
+                                </div>
                             </div>
                         </div>
-                        <div className='flex justify-center'>
-                            <div>
-                                <button className='border border-Gray-6 px-[1.125rem] py-[0.425rem]
-                        rounded-[0.75rem] text-Gray-7 hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2
-                        hover:text-white'>Design Consultation</button>
-                            </div>
-                        </div>
-                        <div className='flex mt-[0.69rem] justify-center'>
-                            <div className='mr-2'>
-                                <button className='border border-Gray-6 px-[1.125rem] py-[0.425rem]
-                        rounded-[0.75rem] text-Gray-7 hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2
-                        hover:text-white'>UI/UX Design</button>
-                            </div>
-
-                            <div>
-                                <button className='border border-Gray-6 px-[1.125rem] py-[0.425rem]
-                        rounded-[0.75rem] text-Gray-7 hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2
-                        hover:text-white'>Other</button>
-                            </div>
-                        </div>
-
 
 
                         <div className="mt-[5.5rem]">
                             <div>
                                 <input
                                     name='name'
+                                    autoComplete='off'
                                     value={contactData.name}
                                     onChange={handleChange}
                                     style={{ outline: 'none' }}
