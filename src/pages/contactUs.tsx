@@ -4,7 +4,7 @@ import ContactUs from '@/components/ContactUsPage/ContactUs'
 
 const contactUs = () => {
     return (
-        <div>
+        <div className='ContactPageBg'>
             <Navbar />
             <ContactUs />
         </div>

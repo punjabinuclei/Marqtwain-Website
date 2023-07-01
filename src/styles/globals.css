@@ -129,7 +129,6 @@ body {
   opacity: 1;
 }
 
-
 .fadeIn-bottom {
   top: 80%;
 }
@@ -146,45 +145,63 @@ body {
   left: 80%;
 }
 
-
-
-
-.testimonial-illustration{
+.testimonial-illustration {
   background: url("../assets/Testimonials2.svg");
   /* background-repeat: no-repeat; */
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.testimonialsCardBg{
-background: url('../assets/TestimonialBackground.png');
+.testimonialsCardBg {
+  background: url("../assets/TestimonialBackground.png");
 }
 
-
-.contactPageBg{
-  background: url('../assets/ContactPageBg.svg');
+.contactPageBg {
+  background: url("../assets/ContactPageBg.svg");
   background-position: 50% 50%;
 }
 
-
 /* Mobile Version */
 
-.LandingPageBgMobile{
+.LandingPageBgMobile {
   background: url("../assets/HomePageBgMobile.svg");
   background-repeat: no-repeat;
 
   background-position: 100% 12%;
 }
 
-.testimonialsCardBgMobile{
-  background: url('../assets/testimonialsCardBgMobile.svg');
+.testimonialsCardBgMobile {
+  background: url("../assets/testimonialsCardBgMobile.svg");
 }
 
-
-
-
 .active {
-  background-color:   #4F4FC8;
+  background-color: #4f4fc8;
   border-radius: 0.75rem;
   border: none !important;
+}
+
+/* .ContactPageBg {
+  background: url("../assets/EllipseNew.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+} */
+
+.ContactPageBg {
+  background: url("../assets/EllipseNewPhone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+}
+
+@media (min-width: 1280px) {
+  .ContactPageBg {
+    background: url("../assets/EllipseNew.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
 }

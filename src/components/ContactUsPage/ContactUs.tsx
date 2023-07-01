@@ -11,15 +11,15 @@ import bg2 from '../../assets/EllipseNew2.svg'
 
 const ContactUs = () => {
     return (
-        <div>
+        <div className=''>
 
-            <div className='hidden lg:block'>
-                <div className='flex justify-between lg:pl-[170px] lg:pr-[200px] ContactPageBg'>
+            <div className='hidden lg:block '>
+                <div className='flex justify-between lg:pl-[170px] lg:pr-[200px]'>
                     <div  >
                         <div >
-                            <h1 className='text-[2.8rem] text-[#6D748F] '>Let’s <span className='text-white'>level</span> up your<span className='relative bottom-3' > <br />
+                            <h1 className='text-[2.8rem]  text-transparent bg-clip-text bg-gradient-to-r from-[#6D748F] to-[#4F56729E]'>Let’s <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#4F567254] ">'>level</span> up your<span className='relative bottom-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6D748F] to-[#4F56729E]' > <br />
                                 brand together,</span>
-                                <span className='relative bottom-6'><br />let’s work</span></h1>
+                                <span className='relative bottom-6 text-transparent bg-clip-text bg-gradient-to-r from-[#6D748F] to-[#4F56729E]'><br />let’s work</span></h1>
                         </div>
                         <div className='mt-[15rem]'>
                             <div className='flex'>
@@ -43,9 +43,9 @@ const ContactUs = () => {
                 <div className='mx-[2rem] z-40'>
                     <div>
                         <div >
-                            <h1 className='text-[1.9rem] text-[#6D748F] text-center'>Let’s <span className='text-white'>level</span> up your<span className='relative bottom-3' > <br />
+                            <h1 className='text-[1.9rem] text-transparent bg-clip-text bg-gradient-to-r from-[#6D748F] to-[#4F56729E] text-center'>Let’s <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#4F567254]'>level</span> up your<span className='relative bottom-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6D748F] to-[#4F56729E]' > <br />
                                 brand together,</span>
-                                <span className='relative bottom-6'><br />let’s work</span></h1>
+                                <span className='relative bottom-6 text-transparent bg-clip-text bg-gradient-to-r from-[#6D748F] to-[#4F56729E]'><br />let’s work</span></h1>
                         </div>
                     </div>
                     <div>
