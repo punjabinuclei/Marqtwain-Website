@@ -1,10 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import DatingImg from '../../assets/Projects/dating.svg'
-import DictionaryImg from '../../assets/Projects/Dictionary.svg'
-import NFTImg from '../../assets/Projects/NFT.svg'
-import WatchImg from '../../assets/Projects/Watch.svg'
-
+import Mulya from '../../assets/Mulya.png'
+import DictionaryImg from '../../assets/Dictionary.png'
+import NFTImg from '../../assets/NFT.png'
+import WatchImg from '../../assets/Watch.png'
 import FeaturedProjectContainer from './components/FeaturedProjectsContainer'
 
 
@@ -23,12 +22,12 @@ const FeaturedProjects = () => {
                 <div className=' grid grid-cols-2 gap-10 '>
                     <div className="relative group">
                         <FeaturedProjectContainer heading='ArtMint' description='Your Gateway to future Digital Art'>
-                            <Image src={NFTImg} alt="Img" />
+                            <Image  src={NFTImg} alt="Img" />
                         </FeaturedProjectContainer >
                     </div>
 
 
-                    <div className='relative bottom-[179px]'>
+                    <div className='relative bottom-[165px]'>
                         <FeaturedProjectContainer heading='Lexiverse' description='Interactive Dictionary App'>
                             <Image src={DictionaryImg} alt="Img" />
                         </FeaturedProjectContainer >
@@ -39,9 +38,9 @@ const FeaturedProjects = () => {
                             <Image src={WatchImg} alt="Img" />
                         </FeaturedProjectContainer >
                     </div>
-                    <div className='relative bottom-[179px]'>
-                        <FeaturedProjectContainer heading='Coupl.' description='Saving and Investing for Couples'>
-                            <Image src={DatingImg} alt="Img" />
+                    <div className='relative bottom-[165px]'>
+                        <FeaturedProjectContainer heading='Mulya' description='Abating International Transactional Fees '>
+                            <Image src={Mulya} alt="Img" />
                         </FeaturedProjectContainer >
                     </div>
 
@@ -49,12 +48,12 @@ const FeaturedProjects = () => {
 
                     </div>
 
-                    <div className='relative bottom-[150px]'>
+                    <div className='relative bottom-[135px]'>
                         <div className='font-normal text-4xl leading-[16px]  tracking-[0.05em]'>
                             Wait, there's more
                         </div>
                         <div className='mt-10'>
-                            <button className='border-2 border-Orange-2 py-[12px] px-[32px] rounded-xl font-bold text-sm leading-6 flex items-center text-center tracking-wider'>See More</button>
+                            <button className='border-2 border-Orange-2 py-[12px] px-[32px] rounded-xl font-bold text-sm leading-6 flex items-center text-center tracking-wider hover:bg-Orange-2 hover:text-white'>See More</button>
                         </div>
                     </div>
 

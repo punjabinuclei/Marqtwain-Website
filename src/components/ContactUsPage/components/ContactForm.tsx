@@ -83,8 +83,8 @@ const ContactForm = () => {
                                     <button
                                         onClick={() => handleButtonClick('user-research')}
                                         type="button"
-                                        className={`border ${activeButton === 'user-research' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
-                                    rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                        className={`border ${activeButton === 'user-research' ? 'border-Theme-Blue-2 text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                    rounded-[0.85rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
                                     >
                                         User Research
                                     </button>
@@ -93,16 +93,16 @@ const ContactForm = () => {
                                 <div className={`mr-2 ${activeButton === 'web-design' ? 'activeButton' : ''}`}>
                                     <button
                                         onClick={() => handleButtonClick('web-design')}
-                                        type='button' className={`border ${activeButton === 'web-design' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
-                                    rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                        type='button' className={`border ${activeButton === 'web-design' ? 'border-Theme-Blue-2 text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                    rounded-[0.85rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
                                     >Web Design</button>
                                 </div>
 
                                 <div className={` ${activeButton === 'design-consultation' ? 'activeButton' : ''}`}>
                                     <button
                                         onClick={() => handleButtonClick('design-consultation')}
-                                        type='button' className={`border ${activeButton === 'design-consultation' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
-                                    rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                        type='button' className={`border ${activeButton === 'design-consultation' ? 'border-Theme-Blue-2 text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                    rounded-[0.85rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
                                     >Design Consultation</button>
                                 </div>
 
@@ -112,15 +112,15 @@ const ContactForm = () => {
                                 <div className={`mr-2  ${activeButton === 'ui/ux-design' ? 'activeButton' : ''}`}>
                                     <button
                                         onClick={() => handleButtonClick('ui/ux-design')}
-                                        type='button' className={`border ${activeButton === 'ui/ux-design' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
-                                    rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
+                                        type='button' className={`border ${activeButton === 'ui/ux-design' ? 'border-Theme-Blue-2 text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                    rounded-[0.85rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
                                     >UI/UX Design</button>
                                 </div>
 
                                 <div className={`mr-2  ${activeButton === 'other' ? 'activeButton' : ''}`}>
                                     <button
                                         onClick={() => handleButtonClick('other')}
-                                        type='button' className={`border ${activeButton === 'other' ? 'border-none text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
+                                        type='button' className={`border ${activeButton === 'other' ? 'border-Theme-Blue-2 text-white' : 'border-Gray-6 text-Gray-7'} px-[1.125rem] py-[0.425rem]
                                     rounded-[0.75rem] hover:bg-Theme-Blue-2 hover:border-Theme-Blue-2 hover:text-white`}
                                     >Other</button>
                                 </div>

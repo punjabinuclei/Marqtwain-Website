@@ -38,7 +38,7 @@ const HeroSection = () => {
                 <div className='relative bottom-1 lg:hidden text-[0.8rem] text-Gray-3 pl-1'>
                     <h1>Reliable. Scalable. Affordable</h1>
                 </div>
-                <div className="mt-[7rem] lg:mt-8">
+                {/* <div className="mt-[7rem] lg:mt-8">
                     <form onSubmit={handleSubmit}>
                         <input
                             type="email"
@@ -54,7 +54,7 @@ const HeroSection = () => {
                             Get Started
                         </button>
                     </form>
-                </div>
+                </div> */}
             </div>
         </div>
     );

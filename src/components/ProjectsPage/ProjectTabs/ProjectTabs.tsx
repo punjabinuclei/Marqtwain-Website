@@ -19,7 +19,7 @@ const ProjectTabs = () => {
     return (
         <div>
             <TabContext value={value}>
-                <Box sx={{ borderBottom: 1, borderColor: 'divider', width: 'fullWidth' }}>
+                <Box sx={{ borderBottom: 1, borderColor: 'rgba(0,0,0,0)', width: 'fullWidth' }}>
                     <TabList
                         variant="fullWidth"
                         onChange={handleChange}
@@ -30,7 +30,7 @@ const ProjectTabs = () => {
                     >
                         <Tab
                             label="Web Designs"
-                            className="font-light text-[#ffffff4d] text-opacity-30 text-2xl hover:text-white hover-underline-animation transition-delay-300"
+                            className="font-[250] text-[#646469] text-opacity-30 text-[20px] hover:text-white hover-underline-animation transition-delay-300 "
                             sx={{
                                 '&.Mui-selected': {
                                     color: '#FFFFFF',
@@ -40,7 +40,7 @@ const ProjectTabs = () => {
                         />
                         <Tab
                             label="App Designs"
-                            className="font-light text-[#ffffff4d] text-opacity-30 text-2xl hover:text-white hover-underline-animation transition-delay-300"
+                            className="font-[250] text-[#646469] text-opacity-30 text-[20px] hover:text-white hover-underline-animation transition-delay-300"
                             sx={{
                                 '&.Mui-selected': {
                                     color: '#FFFFFF',
@@ -50,7 +50,7 @@ const ProjectTabs = () => {
                         />
                         <Tab
                             label="Motion UI"
-                            className="font-light text-[#ffffff4d] text-opacity-30 text-2xl hover:text-white hover-underline-animation transition-delay-300"
+                            className="font-[250] text-[#646469] text-opacity-30 text-[20px] hover:text-white hover-underline-animation transition-delay-300"
                             sx={{
                                 '&.Mui-selected': {
                                     color: '#FFFFFF',

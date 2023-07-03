@@ -30,8 +30,8 @@ const Testimonials = () => {
                             items={3}
                             responsiveRefreshRate={5}
                             autoplay={true}
-                            autoplayTimeout={3000}
-                            smartSpeed={3000}
+                            autoplayTimeout={5000}
+                            smartSpeed={5000}
                             autoplayHoverPause={true}
                             nav={false}
                             dots={false}
@@ -67,7 +67,27 @@ const Testimonials = () => {
                                 to get design done well and fast. Their work is intuitive and enables speed, 
                                 and the dedicated team model ensures everyone understands our brand and day-to-day
                                 needs deeply, allowing for scale.”'
-                                name='Mohit Bhandari' org='Strazy' position='CEO & Founder' />
+                                    name='Mohit Bhandari' org='Strazy' position='CEO & Founder' />
+                            </div>
+
+                            <div className='py-[56px] item flex justify-center'>
+                                <TestimonialsContainer testimonial='"Marqtwinn Creations transformed our website with their
+                                    exceptional UI/UX design. The result is visually stunning and user-friendly, exceeding our
+                                    expectations. Highly recommend their services!"'
+                                    name='Srinivas Sarkar' org='Coupl' position='Founder' />
+                            </div>
+
+                            <div className='py-[56px] item flex justify-center'>
+                                <TestimonialsContainer testimonial='“The design work by Marqtwinn Creations brought our vision to life.
+                                    Their UI/UX expertise improved engagement and conversions. They set a new standard for excellence.”'
+                                    name='Saurabh Panjwani' org='Mulya' position='CEO & Founder' />
+                            </div>
+
+                            <div className='py-[56px] item flex justify-center'>
+                                <TestimonialsContainer testimonial='“Marqtwinn Creations enhanced our website with innovative UI/UX design.
+                                    The intuitive navigation and modern look impressed our users, setting us apart from the competition.
+                                    Grateful for their professionalism.”'
+                                    name='Elan' org='MAUI' position='CEO & Founder' />
                             </div>
 
                         </OwlCarousel>

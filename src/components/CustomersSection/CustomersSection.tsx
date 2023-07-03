@@ -13,9 +13,9 @@ import CustomerMobileView from './components/CustomerMobileView'
 
 const CustomersSection = () => {
     return (
-        <div className='relative bottom-[250px] lg:bottom-0 lg:h-fit lg:mb-[84px] lg:pl-[170px] lg:pr-[201px]' >
+        <div className='relative bottom-[250px] lg:bottom-[100px] lg:h-fit lg:mb-[84px] lg:pl-[170px] lg:pr-[201px]' >
             <div>
-                <div className='text-white text-[0.8rem] font-semibold lg:text-base leading-base flex items-center justify-center tracking-widest uppercase'>
+                <div className='text-white text-[0.8rem] font-semibold lg:text-base leading-base flex items-center justify-center tracking-widest lg:tracking-[0.25rem] uppercase'>
                     <p>
                         60+ pixel-perfect projects delivered<span className='hidden lg:inline-block pl-1'> to happy customers</span>
                     </p>
@@ -23,7 +23,7 @@ const CustomersSection = () => {
                 <div className='hidden lg:block'>
                     <div className=' flex justify-around pt-[49px] pb-[54px]'>
                         <div>
-                            <Image src={Stratzy} alt='Stratzy' />
+                            <Image  src={Stratzy} alt='Stratzy' />
                         </div>
                         <div>
                             <Image src={CouplLogo} alt='CouplLogo' />

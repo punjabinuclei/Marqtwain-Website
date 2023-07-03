@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
-import Project1 from '../../../../assets/Projects/WebDesigns/Project1.svg'
-import Project2 from '../../../../assets/Projects/WebDesigns/Project2.svg'
-import Project3 from '../../../../assets/Projects/WebDesigns/Project3.svg'
-import Project4 from '../../../../assets/Projects/WebDesigns/Project4.svg'
-import Project5 from '../../../../assets/Projects/WebDesigns/Project5.svg'
+import Project1 from '../../../../assets/Vibz.png'
+import Project2 from '../../../../assets/Mulya.png'
+import Project3 from '../../../../assets/TraedAi.png'
+import Project4 from '../../../../assets/Coupl.png'
+import Project5 from '../../../../assets/Stratzy.png'
 import Project6 from '../../../../assets/Projects/WebDesigns/Project6.svg'
 
 import ProjectContainer from './ProjectContainer'
@@ -28,7 +28,7 @@ const WebDesigns = () => {
                 <ProjectContainer heading='Mulya' description='Abating International Transactional Fees '>
                     <Image src={Project2} alt='project1' />
                 </ProjectContainer>
-                <ProjectContainer heading='Transai.' description='Revolutionizing Trade Finance '>
+                <ProjectContainer heading='Traed.ai' description='Revolutionizing Trade Finance '>
                     <Image src={Project3} alt='project1' />
                 </ProjectContainer>
                 <ProjectContainer heading='Coupl.' description='Saving & Investing for Couples'>

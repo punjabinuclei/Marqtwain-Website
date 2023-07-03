@@ -2,14 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import ProjectContainer from './ProjectContainer'
 
-import Project1 from '../../../../assets/Projects/AppDesigns/Project1.svg'
-import Project2 from '../../../../assets/Projects/AppDesigns/Project2.svg'
-import Project3 from '../../../../assets/Projects/AppDesigns/Project3.svg'
-import Project4 from '../../../../assets/Projects/AppDesigns/Project4.svg'
-import Project5 from '../../../../assets/Projects/AppDesigns/Project5.svg'
-import Project6 from '../../../../assets/Projects/AppDesigns/Project6.svg'
-import Project7 from '../../../../assets/Projects/AppDesigns/Project7.svg'
-import Project8 from '../../../../assets/Projects/AppDesigns/Project8.svg'
+import Project1 from '../../../../assets/Watch.png'
+import Project2 from '../../../../assets/Dictionary.png'
+import Project3 from '../../../../assets/WealthCraft.png'
+import Project4 from '../../../../assets/decrypt.png'
+import Project5 from '../../../../assets/WineWala.png'
+import Project6 from '../../../../assets/MicWala.png'
+import Project7 from '../../../../assets/Gamewala.png'
+// import Project8 from '../../../../assets/Projects/AppDesigns/Project8.svg'
 
 
 
@@ -41,9 +41,9 @@ const AppDesigns = () => {
                 <ProjectContainer heading='G-Vault' description='Master your games, master your destiny'>
                     <Image src={Project7} alt='project1' />
                 </ProjectContainer>
-                <ProjectContainer heading='ArtMint' description='Your Gateway to future Digital Art'>
+                {/* <ProjectContainer heading='ArtMint' description='Your Gateway to future Digital Art'>
                     <Image src={Project8} alt='project1' />
-                </ProjectContainer>
+                </ProjectContainer> */}
 
 
 
