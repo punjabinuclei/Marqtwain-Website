@@ -17,11 +17,13 @@ const ProjectTabs = () => {
     };
 
     return (
-        <div>
+        <div className=''>
             <TabContext value={value}>
                 <Box sx={{ borderBottom: 1, borderColor: 'rgba(0,0,0,0)', width: 'fullWidth' }}>
                     <TabList
                         variant="fullWidth"
+                        scrollButtons
+                        allowScrollButtonsMobile
                         onChange={handleChange}
                         aria-label="lab API tabs example"
                         TabIndicatorProps={{
@@ -30,7 +32,7 @@ const ProjectTabs = () => {
                     >
                         <Tab
                             label="Web Designs"
-                            className="font-[250] text-[#646469] text-opacity-30 text-[20px] hover:text-white hover-underline-animation transition-delay-300 "
+                            className="font-[100] lg:font-[250] text-[#646469] text-opacity-30 text-[0.7rem] lg:text-[20px] hover:text-white hover-underline-animation transition-delay-300 "
                             sx={{
                                 '&.Mui-selected': {
                                     color: '#FFFFFF',
@@ -40,7 +42,7 @@ const ProjectTabs = () => {
                         />
                         <Tab
                             label="App Designs"
-                            className="font-[250] text-[#646469] text-opacity-30 text-[20px] hover:text-white hover-underline-animation transition-delay-300"
+                            className="font-[100] lg:font-[250] text-[#646469] text-opacity-30 text-[0.7rem] lg:text-[20px] hover:text-white hover-underline-animation transition-delay-300 "
                             sx={{
                                 '&.Mui-selected': {
                                     color: '#FFFFFF',
@@ -50,7 +52,7 @@ const ProjectTabs = () => {
                         />
                         <Tab
                             label="Motion UI"
-                            className="font-[250] text-[#646469] text-opacity-30 text-[20px] hover:text-white hover-underline-animation transition-delay-300"
+                            className="font-[100] lg:font-[250] text-[#646469] text-opacity-30 text-[0.7rem] lg:text-[20px] hover:text-white hover-underline-animation transition-delay-300 "
                             sx={{
                                 '&.Mui-selected': {
                                     color: '#FFFFFF',

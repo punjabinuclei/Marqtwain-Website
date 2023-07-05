@@ -202,3 +202,24 @@ body {
     height: 100vh;
   }
 }
+
+
+.projectsPageBg{
+  background:url("../assets/projectspageBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:right;
+}
+
+@media (max-width: 1280px) {
+  .projectsPageBg{
+    background:url("../assets/projectspageBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+}
+
+

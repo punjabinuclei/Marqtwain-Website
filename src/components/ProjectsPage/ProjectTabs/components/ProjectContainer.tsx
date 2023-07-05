@@ -11,7 +11,7 @@ interface Props {
 const ProjectContainer = ({ children, heading, description }: Props) => {
     return (
 
-        <div className="">
+        <div className="mt-6 mx-4 lg:mt-0 lg:mx-0">
             <div className="content">
                 <div className="content-overlay"></div>
                 {children}

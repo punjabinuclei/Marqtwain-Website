@@ -77,7 +77,7 @@ const Footer = () => {
                     <div className='mt-8'>
                         <h1 className='font-semibold text-[1.3rem] text-center'>Connect with Us!</h1>
                         <p className='text-[0.8rem] font-semibold pt-3 text-Gray-4 text-center'>We're just a message or a call away - get  in touch with us  today!</p>
-                        <input style={{ outline: 'none' }} type="text" id="first_name" className="mt-8 bg-gray-50 border font-medium border-gray-400 rounded-md text-black text-xs   block w-full p-3.5  " placeholder="john@gmail.com" required />
+                        {/* <input style={{ outline: 'none' }} type="text" id="first_name" className="mt-8 bg-gray-50 border font-medium border-gray-400 rounded-md text-black text-xs   block w-full p-3.5  " placeholder="john@gmail.com" required /> */}
                         <button  onClick={() => router.push('/contactUs')} className='block w-full bg-Theme-Blue-3 p-4 font-medium text-sm rounded-xl text-white mt-4 '>Contact Us</button>
                     </div>
                 </div>

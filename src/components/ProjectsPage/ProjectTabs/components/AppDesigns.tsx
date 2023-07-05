@@ -18,7 +18,7 @@ const AppDesigns = () => {
 
 
         <div className='flex justify-center' >
-            <div className='container grid grid-cols-2 gap-10 px-[160px] py-[80px]'>
+            <div className='container lg:grid lg:grid-cols-2 lg:gap-10 lg:px-[160px] lg:py-[80px]'>
 
                 <ProjectContainer heading='Lolo Rosso' description='Watch Connoissuer E-Commerce Store'>
                     <Image src={Project1} alt='project1' />

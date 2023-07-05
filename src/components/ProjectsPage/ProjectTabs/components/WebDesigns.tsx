@@ -18,12 +18,14 @@ const WebDesigns = () => {
 
 
         <div className='flex justify-center' >
-            <div className='container grid grid-cols-2 gap-10 px-[160px] py-[80px]'>
+            <div className='container lg:grid lg:grid-cols-2 lg:gap-10 lg:px-[160px] lg:py-[80px] py-[20px]'>
 
 
 
                 <ProjectContainer heading='VIBZ' description='Modern Lifestyle Blogs'>
+                    <div className='content-image'>
                     <Image src={Project1} alt='project1' />
+                    </div>
                 </ProjectContainer>
                 <ProjectContainer heading='Mulya' description='Abating International Transactional Fees '>
                     <Image src={Project2} alt='project1' />
