@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
 
 interface Props {
@@ -11,7 +12,10 @@ interface Props {
 const FeaturedProjectContainer = ({ children, heading, description }: Props) => {
     return (
 
-        <div className="">
+        <motion.div
+            whileHover={{ scale: 1.04 }}
+            transition={{ duration: 0.3 }}
+            className="">
             <div className="content">
                 <div className="content-overlay"></div>
                 {children}
@@ -20,7 +24,7 @@ const FeaturedProjectContainer = ({ children, heading, description }: Props) => 
                     <p className='text-[0.6rem] lg:text-[16px] leading-16 flex items-center tracking-tighter text-white relative bottom-5 lg:bottom-0 '>{description}</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
 
 
     )

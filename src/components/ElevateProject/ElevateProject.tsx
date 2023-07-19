@@ -11,6 +11,7 @@ const ElevateProject = () => {
                 <div className='flex justify-between pt-[437px]'>
                     <div>
                         <Image src={ElevateImage} alt='Img' />
+                      
                     </div>
                     <div className='pr-[150px]'>
                         <div className='font-semibold text-white text-5xl leading-10 tracking-wide'>
@@ -32,10 +33,10 @@ const ElevateProject = () => {
                     Elevate your product with <span className='relative bottom-3'><br />Marqtwinn</span>
                 </div>
                 <div className='relative bottom-10'>
-                            <ElevateBox digits='$985K+' info='Fundraising' info2='' definition='We helped companies to get $900k funding' />
-                            <ElevateBox digits='30+' info='Satisfied' info2='Client' definition='Over half our clients stay with us for longer than a single project.' />
-                            <ElevateBox digits='3Yr+' info='International' info2='Immersion' definition='3+ years of operation with successful project launches across all over the world' />
-                        </div>
+                    <ElevateBox digits='$985K+' info='Fundraising' info2='' definition='We helped companies to get $900k funding' />
+                    <ElevateBox digits='30+' info='Satisfied' info2='Client' definition='Over half our clients stay with us for longer than a single project.' />
+                    <ElevateBox digits='3Yr+' info='International' info2='Immersion' definition='3+ years of operation with successful project launches across all over the world' />
+                </div>
             </div>
 
         </div>

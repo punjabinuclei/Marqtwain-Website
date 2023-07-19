@@ -69,7 +69,7 @@ const ProjectTabs = () => {
                     <AppDesigns />
                 </TabPanel>
                 <TabPanel value="5">
-                    {/* <MotionUi /> */}
+                    <MotionUi />
                 </TabPanel>
             </TabContext>
         </div>

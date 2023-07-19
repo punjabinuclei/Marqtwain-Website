@@ -83,10 +83,14 @@ body {
 }
 
 .content .content-overlay {
-  border-radius: 18px;
-  background: linear-gradient(181deg, rgba(37, 39, 51, 0.00) 18.02%, rgba(37, 39, 51, 0.90) 100%);
+  border-radius: 20px;
+  background: linear-gradient(
+    181deg,
+    rgba(37, 39, 51, 0) 18.02%,
+    rgba(37, 39, 51, 0.9) 100%
+  );
   position: absolute;
-  height: 50%;
+  height: 60%;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -203,23 +207,19 @@ body {
   }
 }
 
-
-.projectsPageBg{
-  background:url("../assets/projectspageBg.png");
+.projectsPageBg {
+  background: url("../assets/projectspageBg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:right;
+  background-position: right;
 }
 
 @media (max-width: 1280px) {
-  .projectsPageBg{
-    background:url("../assets/projectspageBg.png");
+  .projectsPageBg {
+    background: url("../assets/projectspageBg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-  
-  
 }
-
 

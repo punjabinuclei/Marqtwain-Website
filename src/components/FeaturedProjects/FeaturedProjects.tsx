@@ -6,6 +6,8 @@ import NFTImg from '../../assets/NFT.png'
 import WatchImg from '../../assets/Watch.png'
 import FeaturedProjectContainer from './components/FeaturedProjectsContainer'
 
+import { motion } from "framer-motion"
+
 
 const FeaturedProjects = () => {
     return (
@@ -20,9 +22,11 @@ const FeaturedProjects = () => {
                     </div>
                 </div>
                 <div className=' grid grid-cols-2 gap-10 '>
-                    <div className="relative group">
+                    <div
+                        className="relative group">
+    
                         <FeaturedProjectContainer heading='ArtMint' description='Your Gateway to future Digital Art'>
-                            <Image  src={NFTImg} alt="Img" />
+                            <Image src={NFTImg} alt="Img" />
                         </FeaturedProjectContainer >
                     </div>
 
@@ -53,7 +57,7 @@ const FeaturedProjects = () => {
                             Wait, there's more
                         </div>
                         <div className='mt-10'>
-                            <button className='border-2 border-Orange-2 py-[12px] px-[32px] rounded-xl font-bold text-sm leading-6 flex items-center text-center tracking-wider hover:bg-Orange-2 hover:text-white'>See More</button>
+                            <button className='transition ease-in-out delay-150 border-2 border-Orange-2 py-[12px] px-[32px] rounded-xl font-bold text-sm leading-6 flex items-center text-center tracking-wider hover:bg-Orange-2 hover:text-white'>See More</button>
                         </div>
                     </div>
 

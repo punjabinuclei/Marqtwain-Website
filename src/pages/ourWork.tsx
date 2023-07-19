@@ -5,9 +5,15 @@ import ProjectTabs from '@/components/ProjectsPage/ProjectTabs/ProjectTabs'
 import FooterMobile from '@/components/Footer/FooterMobile'
 import Footer from '@/components/Footer/Footer'
 
-const ourWork = () => {
+import PageTransition from '@/components/PageTransition'
+type ProjectsPageProps = {}
+type ProjectsPageRef = React.ForwardedRef<HTMLDivElement>
+
+
+
+const ourWork = (props: ProjectsPageProps, ref: ProjectsPageRef) => {
     return (
-        <div>
+        <PageTransition ref={ref}>
             <div className='projectsPageBg'>
                 <Navbar />
                 <Header />
@@ -23,7 +29,7 @@ const ourWork = () => {
                     <FooterMobile />
                 </div>
             </div>
-        </div>
+        </PageTransition>
     )
 }
 

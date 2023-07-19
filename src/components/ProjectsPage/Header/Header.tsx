@@ -1,8 +1,26 @@
 import React from 'react'
+import { motion } from 'framer-motion';
+
+const variants = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            delay: 2,
+            staggerChildren: 0.5
+        }
+    },
+}
+
+
 
 const Header = () => {
     return (
-        <div>
+        <motion.div
+        variants={variants}
+        initial='hidden'
+        animate='show'
+        >
             <div className='hidden lg:block'>
                 <div className='flex justify-center mt-[90px]'>
                     <div>
@@ -27,7 +45,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

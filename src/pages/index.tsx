@@ -13,9 +13,14 @@ import Testimonials from '@/components/Testimonials/Testimonials'
 import Footer from '@/components/Footer/Footer'
 import FooterMobile from '@/components/Footer/FooterMobile'
 
-export default function Home() {
+import PageTransition from '@/components/PageTransition'
+type HomePageProps = {}
+type HomePageRef = React.ForwardedRef<HTMLDivElement>
+
+
+export default function Home(props: HomePageProps, ref: HomePageRef) {
   return (
-    <div>
+    <PageTransition ref={ref}>
       <div className='LandingPageBgMobile lg:hidden'>
         <Navbar />
         <HeroSection />
@@ -48,6 +53,7 @@ export default function Home() {
           <FooterMobile />
         </div>
       </div>
-    </div>
+    </PageTransition>
   )
 }
+

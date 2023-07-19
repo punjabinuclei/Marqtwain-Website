@@ -4,6 +4,7 @@ import ourApproach from '../../assets/OurApproach.svg'
 import CodeAgain from '../../assets/CodeAgain.svg'
 import Test from '../../assets/Test.svg'
 
+
 const OurApproach = () => {
     return (
         <div>
@@ -21,17 +22,20 @@ const OurApproach = () => {
                     <div>
                         <Image src={ourApproach} alt='Img' />
                     </div>
+
                     <div className='relative top-12'>
                         {/* <div className="animated-container">
-                        <div className="text">Discovery and Validation</div>
-                        <div className="text">Define, Ideate & Design</div>
-                        <div className="text">Maintenance and Monitoring</div>
-                        <div className="text">Testing and Validation</div>
-                    </div> */}
-
+                            <div className="text">Discovery and Validation</div>
+                            <div className="text">Define, Ideate & Design</div>
+                            <div className="text">Maintenance and Monitoring</div>
+                            <div className="text">Testing and Validation</div>
+                        </div> */}
+                        
+                    </div>
+                    
                         <Image src={CodeAgain} alt='CodeAgain' />
 
-                    </div>
+
                 </div>
             </div>
             {/* Mobile Version */}

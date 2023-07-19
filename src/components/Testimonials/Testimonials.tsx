@@ -1,6 +1,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import TestimonialsContainer from './components/TestimonialsContainer';
+import "animate.css"
 
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -82,7 +83,7 @@ const Testimonials = () => {
                 marginHeight={50}
             >
                 {testimonialsData.map((testimonial, index) => (
-                    <div key={index} className="py-[56px] item flex justify-center">
+                    <div key={index} className="py-[56px] item flex justify-center ">
                         <TestimonialsContainer {...testimonial} />
                     </div>
                 ))}
