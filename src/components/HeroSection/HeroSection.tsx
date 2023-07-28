@@ -4,17 +4,6 @@ import 'animate.css'
 
 import { motion } from 'framer-motion';
 
-const variants = {
-    hidden: { opacity: 0 },
-    show: {
-        opacity: 1,
-        transition: {
-            delay: 2,
-        }
-    },
-}
-
-
 
 const HeroSection = () => {
     const router = useRouter();
@@ -33,12 +22,13 @@ const HeroSection = () => {
 
     return (
 
-        <motion.div 
-        variants={variants}
-        initial='hidden'
-        animate='show'        
-        className="h-screen mt-[1rem] pl-[1.75rem] lg:mt-[6.25rem] lg:pl-[10.625rem] lg:pr-[12.5625rem]">
-            <div className="text-white lg:h-full leading-10">
+        <div
+            className="h-screen mt-[1rem] pl-[1.75rem] lg:mt-[6.25rem] lg:pl-[10.625rem] lg:pr-[12.5625rem] overflow-hidden">
+            <motion.div
+                initial={{ opacity: 0, y: -15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1, ease: 'easeInOut', duration: 0.5 }}
+                className="text-white lg:h-full leading-10">
                 <div className="text-[1.9375rem] lg:text-[3.125rem] font-bold">
                     Crafting<span className='lg:hidden'><br /></span>Products for
                     <span className="relative top  lg:top-4">
@@ -73,8 +63,8 @@ const HeroSection = () => {
                         </button>
                     </form>
                 </div> */}
-            </div>
-        </motion.div>
+            </motion.div>
+        </div>
     );
 };
 

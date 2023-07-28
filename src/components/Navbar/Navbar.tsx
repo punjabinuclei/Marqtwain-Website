@@ -29,11 +29,12 @@ const Navbar = () => {
             animate='show'
         >
             <NavbarContainer>
-                <div className='hidden lg:block'>
+                <motion.div 
+                    className='hidden lg:block'>
                     <a href="/" onClick={(e) => { e.preventDefault(); router.push('/'); }}>
                         <Image src={NavLogo} alt='NavLogo' />
                     </a>
-                </div>
+                </motion.div>
                 <div className='lg:hidden'>
                     <a href="/" onClick={(e) => { e.preventDefault(); router.push('/'); }}>
                         <Image src={NavLogo2} alt='NavLogo' />
