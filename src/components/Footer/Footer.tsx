@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import FooterLogo from "../../assets/LogoFooter.svg"
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 
 const Footer = () => {
-    const router=useRouter();
+    const router = useRouter();
     return (
         <div className='mt-6 '>
             <div className='bg-white  px-2 pt-24 pb-10'>
@@ -15,11 +16,26 @@ const Footer = () => {
                 <div className='flex justify-evenly pb-12'>
                     <div>
                         <ul className='font-bold text-lg'>
-                            <li className='pb-6'>Our Work</li>
-                            <li className='pb-6'>Why Us</li>
-                            <li className='pb-6'>About Us</li>
-                            <li className='pb-6'>Solutions</li>
-                            <li className='pb-6'>Pricing</li>
+                            {/* Link to "Our Work" page */}
+                            <li className='pb-6'>
+                                <Link href='/ourWork'>Our Work</Link>
+                            </li>
+                            {/* Link to "Why Us" page */}
+                            <li className='pb-6'>
+                                <Link href='/404'>Why Us</Link>
+                            </li>
+                            {/* Link to "About Us" page */}
+                            <li className='pb-6'>
+                                <Link href='/404'>About Us</Link>
+                            </li>
+                            {/* Link to "Solutions" page */}
+                            <li className='pb-6'>
+                                <Link href='/404'>Solutions</Link>
+                            </li>
+                            {/* Link to "Pricing" page */}
+                            <li className='pb-6'>
+                                <Link href='/404'>Pricing</Link>
+                            </li>
                         </ul>
                     </div>
                     <div>
@@ -42,7 +58,7 @@ const Footer = () => {
                         <h1 className='font-bold text-lg'>Connect with Us!</h1>
                         <p className='text-xs font-semibold pt-3'>We're just a message or a call away - get  in touch with us <br /> today!</p>
                         {/* <input style={{ outline: 'none' }} type="text" id="first_name" className="mt-8 bg-gray-50 border font-medium border-gray-400 rounded-md text-black text-xs   block w-full p-3.5  " placeholder="john@gmail.com" required /> */}
-                        <button  onClick={() => router.push('/contactUs')} className='block w-full bg-Theme-Blue-3 p-4 font-medium text-sm rounded-xl text-white mt-4 '>Contact Us</button>
+                        <button onClick={() => router.push('/contactUs')} className='block w-full bg-Theme-Blue-3 p-4 font-medium text-sm rounded-xl text-white mt-4 '>Contact Us</button>
                     </div>
                 </div>
 

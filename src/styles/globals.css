@@ -223,3 +223,9 @@ body {
   }
 }
 
+.featuredProjectBg{
+  background: url("../assets/bg-404.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}

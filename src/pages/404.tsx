@@ -1,8 +1,11 @@
 import React from 'react'
+import ErrorPageComponent from '@/components/ErrorPage/ErrorPageComponent'
 
 const ErrorPage = () => {
     return (
-        <div>404</div>
+        <div>
+            <ErrorPageComponent />
+        </div>
     )
 }
 
