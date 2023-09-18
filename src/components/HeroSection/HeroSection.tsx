@@ -23,7 +23,7 @@ const HeroSection = () => {
     return (
 
         <div
-            className="lg:h-screen mt-[1rem] pl-[1.75rem] lg:mt-[6.25rem] lg:pl-[10.625rem] lg:pr-[12.5625rem] overflow-hidden">
+            className="lg:h-screen mt-[1rem] px-[1.75rem] lg:px-0 lg:mt-[6.25rem] lg:pl-[10.625rem] lg:pr-[12.5625rem] overflow-hidden">
             <motion.div
                 initial={{ opacity: 0, y: -15 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -46,10 +46,10 @@ const HeroSection = () => {
                 <div className='relative bottom-1 lg:hidden text-[0.8rem] text-Gray-3 pl-1'>
                     <h1>Reliable. Scalable. Affordable</h1>
                 </div>
-                <div className="mt-[7rem] flex justify-center">
+                <div className="mt-[7rem] lg:mt-6">
                     <button
                         onClick={() => router.push('/contactUs')}
-                        className="px-6 py-3.5 text-sm bg-Orange rounded-xl w-full">
+                        className="px-6 py-3.5 text-sm bg-Orange rounded-xl w-full lg:w-[10rem] ">
                         Get Started
                     </button>
                 </div>
