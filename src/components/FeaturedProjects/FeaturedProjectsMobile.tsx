@@ -4,11 +4,13 @@ import DatingImg from '../../assets/Projects/dating.svg'
 import DictionaryImg from '../../assets/Projects/Dictionary.svg'
 import NFTImg from '../../assets/Projects/NFT.svg'
 import WatchImg from '../../assets/Projects/Watch.svg'
+import {useRouter} from 'next/router';
 
 import FeaturedProjectContainer from './components/FeaturedProjectsContainer'
 
 
 const FeaturedProjects = () => {
+    const router=useRouter();
     return (
         <div className='text-white  overflow-x-hidden'>
             <div>
@@ -53,7 +55,8 @@ const FeaturedProjects = () => {
                         <div className='font-normal text-[0.8rem] leading-[16px]  tracking-[0.05em]'>
                             Wait, there's more
                         </div>
-                        <div className='mt-4'>
+                        <div className='mt-4' 
+                        onClick={() => router.push('/ourWork')}>
                             <button className='border-2 border-Orange-2 py-[12px] px-[2.35rem] rounded-xl font-bold text-[0.8rem] leading-6 flex items-center text-center tracking-wider'>See More</button>
                         </div>
                     </div>
