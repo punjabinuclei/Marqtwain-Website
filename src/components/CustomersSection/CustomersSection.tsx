@@ -28,7 +28,7 @@ const row2 = [
 
 const CustomersSection = () => {
     return (
-        <div className='relative bottom-[250px] lg:bottom-[100px] lg:h-fit lg:mb-[84px] lg:pl-[170px] lg:pr-[201px]' >
+        <div className='relative mt-[5rem] mb-[6rem] lg:mt-0 lg:bottom-[100px] lg:h-fit lg:mb-[84px] lg:pl-[170px] lg:pr-[201px]' >
             <div>
                 <div className='text-white text-[0.8rem] font-semibold lg:text-base leading-base flex 
                 items-center justify-center tracking-widest lg:tracking-[0.25rem] uppercase'>

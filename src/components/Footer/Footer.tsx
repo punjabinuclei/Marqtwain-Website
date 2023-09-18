@@ -16,23 +16,18 @@ const Footer = () => {
                 <div className='flex justify-evenly pb-12'>
                     <div>
                         <ul className='font-bold text-lg'>
-                            {/* Link to "Our Work" page */}
                             <li className='pb-6'>
                                 <Link href='/ourWork'>Our Work</Link>
                             </li>
-                            {/* Link to "Why Us" page */}
                             <li className='pb-6'>
                                 <Link href='/404'>Why Us</Link>
                             </li>
-                            {/* Link to "About Us" page */}
                             <li className='pb-6'>
                                 <Link href='/404'>About Us</Link>
                             </li>
-                            {/* Link to "Solutions" page */}
                             <li className='pb-6'>
                                 <Link href='/404'>Solutions</Link>
                             </li>
-                            {/* Link to "Pricing" page */}
                             <li className='pb-6'>
                                 <Link href='/404'>Pricing</Link>
                             </li>

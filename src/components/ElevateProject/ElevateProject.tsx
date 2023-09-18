@@ -25,7 +25,7 @@ const ElevateProject = () => {
                     </div>
                 </div>
             </div>
-            <div className='lg:hidden relative bottom-[100px]'>
+            <div className='lg:hidden '>
                 <div>
                     <Image src={ElevateBgMobile} alt='Img' />
                 </div>

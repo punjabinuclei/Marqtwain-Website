@@ -23,7 +23,7 @@ const HeroSection = () => {
     return (
 
         <div
-            className="h-screen mt-[1rem] pl-[1.75rem] lg:mt-[6.25rem] lg:pl-[10.625rem] lg:pr-[12.5625rem] overflow-hidden">
+            className="lg:h-screen mt-[1rem] pl-[1.75rem] lg:mt-[6.25rem] lg:pl-[10.625rem] lg:pr-[12.5625rem] overflow-hidden">
             <motion.div
                 initial={{ opacity: 0, y: -15 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -46,23 +46,13 @@ const HeroSection = () => {
                 <div className='relative bottom-1 lg:hidden text-[0.8rem] text-Gray-3 pl-1'>
                     <h1>Reliable. Scalable. Affordable</h1>
                 </div>
-                {/* <div className="mt-[7rem] lg:mt-8">
-                    <form onSubmit={handleSubmit}>
-                        <input
-                            type="email"
-                            style={{ outline: 'none' }}
-                            placeholder="Your Work Email"
-                            className="  rounded-xl lg:w-[251.66px] text-sm  py-3 pl-2 hover:border-2 hover:border-Border text-black"
-                            value={email}
-                            onChange={handleInputChange}
-                        />
-                        <button
-                            onClick={() => router.push('/contactUs')}
-                            className="ml-2 px-6 py-3.5 text-sm bg-Orange rounded-xl">
-                            Get Started
-                        </button>
-                    </form>
-                </div> */}
+                <div className="mt-[7rem] flex justify-center">
+                    <button
+                        onClick={() => router.push('/contactUs')}
+                        className="px-6 py-3.5 text-sm bg-Orange rounded-xl w-full">
+                        Get Started
+                    </button>
+                </div>
             </motion.div>
         </div>
     );

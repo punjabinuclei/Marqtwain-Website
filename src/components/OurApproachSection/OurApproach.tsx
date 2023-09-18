@@ -39,7 +39,7 @@ const OurApproach = () => {
                 </div>
             </div>
             {/* Mobile Version */}
-            <div className='lg:hidden bg-BG-2 h-full w-full text-white y-[60px] relative bottom-[200px]'>
+            <div className='lg:hidden bg-BG-2 h-full w-full text-white my-[60px] '>
                 <div>
                     <Image src={ourApproach} alt='Img' />
                 </div>

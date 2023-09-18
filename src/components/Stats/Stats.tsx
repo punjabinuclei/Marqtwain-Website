@@ -92,7 +92,7 @@ const Stats = () => {
 
 
 
-            <div className='lg:hidden relative bottom-[150px]'>
+            <div className='lg:hidden'>
                 <div className='text-white'>
                     <div className=''>
                         <div className='text-center'>
