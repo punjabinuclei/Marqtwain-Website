@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import ourApproach from '../../assets/OurApproach.svg'
 import CodeAgain from '../../assets/CodeAgain.svg'
 import Test from '../../assets/Test.svg'
 
 
+const data = ['Discovery and Validation', 'Define, Ideate & Design', 'Maintenance and Monitoring', 'Testing and Validation'];
+
 const OurApproach = () => {
+
+    const [currentDataIndex, setCurrentDataIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentDataIndex((prevIndex) => (prevIndex + 1) % data.length);
+        }, 1000);
+        return () => clearInterval(interval);
+    }, [data.length]);
+
+    const currentData = data[currentDataIndex];
+
+
     return (
         <div>
             <div className='bg-BG-2 h-full w-full text-white pt-[60px] hidden lg:block' >
@@ -30,10 +45,10 @@ const OurApproach = () => {
                             <div className="text">Maintenance and Monitoring</div>
                             <div className="text">Testing and Validation</div>
                         </div> */}
-                        
+
                     </div>
-                    
-                        <Image src={CodeAgain} alt='CodeAgain' />
+
+                    <Image src={CodeAgain} alt='CodeAgain' />
 
 
                 </div>
@@ -52,7 +67,7 @@ const OurApproach = () => {
                     </div>
                 </div>
                 <div className='flex justify-center mt-4 pb-10'>
-                    <Image src={Test} alt='Test' />
+                    <h1 className='text-[1.31rem] font-medium ourApproachAnimation'>{currentData}</h1>
                 </div>
             </div>
         </div>
