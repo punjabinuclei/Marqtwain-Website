@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
+import SpotlightAnimation from './components/SpotLightAnimation';
 
 const variants = {
     hidden: { opacity: 0 },
@@ -28,7 +29,8 @@ const Header = () => {
                             <h1>World-Class Products, crafted by Marqtwinn</h1>
                         </div>
                         <div className='font-extrabold text-[143.57px]  tracking-[0.435062px] text-[#5E617D] relative bottom-5 '>
-                            <h1>Our Projects</h1>
+                            <h1></h1>
+                            <SpotlightAnimation/>
                         </div>
                     </div>
                 </div>

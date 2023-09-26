@@ -1,0 +1,25 @@
+/* SpotlightAnimation.module.css */
+
+/* With a scoped selector like this */
+.myContainerClass *,
+.myContainerClass *::after,
+.myContainerClass *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.title {
+  font-size: 10rem;
+  color: hsla(0, 0%, 100%, 0.08);
+  
+  -webkit-background-clip: text;
+  background-image: radial-gradient(closest-side, #7798FF 100%, transparent 0);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
